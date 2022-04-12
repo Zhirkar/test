@@ -1,0 +1,300 @@
+
+
+.maps_c{
+
+
+}
+
+.map iframe{
+    height: 100%;
+    width: 100%;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image:url(img/background.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nova Round', cursive;    ;
+    width: 100%;
+}
+
+.earth{
+
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+
+}
+.earth img{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+
+
+}
+.title{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+.title a{
+    text-decoration: none;
+}
+
+.title_h{
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.title_t{
+    font: 20px;
+    font-weight: 100;
+}
+
+.title_ht{
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.moreBtn {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    height: 2rem;
+    width: 6rem;
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    align-self: flex-start;
+  }
+  .moreBtn:hover {
+    box-shadow: 0 0 40px 40px goldenrod inset;
+  }
+
+.maps{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.map{
+    height: 35vh;
+    width: 35vw;
+    margin-top: 3rem;
+    border: 5px solid white;
+    
+
+    -webkit-box-shadow: 0px 0px 32px -3px rgb(0 0 0 / 39%); 
+    box-shadow: 0px 0px 32px -3px rgb(0 0 0 / 39%);
+}
+
+.mapContainer{
+    height: 100%;
+    width: 100%;
+}
+.navigation{
+   
+
+    font-size: 15px;
+
+
+
+
+} 
+
+
+.navigation a{
+    cursor: pointer;
+    margin: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    /* text-shadow: 0px 10px 20px rgba(2,5,11,0.66); */
+    letter-spacing: 1px;
+
+
+}
+
+.hn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1;
+
+
+    height: 3rem;
+    width: 45rem;
+
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.mn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    z-index: 1;
+    height: 3rem;
+    width: 100%;
+    /* border-radius: 10px; */
+    /* margin-top: 0.5rem; */
+    background: #272727;
+}
+
+.bn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    z-index: 1;
+    height: 3rem;
+    width: 100%;
+    /* border-radius: 10px; */
+    /* margin-top: 0.5rem; */
+    background: #272727;
+
+}
+.wn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    z-index: 1;
+    height: 3rem;
+    width: 100%;
+    /* border-radius: 10px; */
+    /* margin-top: 0.5rem; */
+    background: #272727;
+
+}
+
+
+
+.navigation a:hover{
+    font-size: larger;
+    color: goldenrod;
+}
+
+
+
+
+#home{
+    color: goldenrod;
+
+}
+#mmap{
+    color: goldenrod;
+}
+
+
+
+/* ! bing map ind. */   
+
+#content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+
+
+}
+
+.card{
+    height: 22rem;
+    width: 17rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    /* backdrop-filter: calc(5px); */
+
+    
+}
+.card-title{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.card-subtitle{
+    font-size: 25px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Nova Round';
+
+
+
+}
+
+.icon{
+    font-size: 50px;
+}
+
+
+/* ! map */
+#map_type option{
+    color: #272727;
+    font-family: 'Nova Round';
+
+}
+.mapContainer{
+    cursor: grab;
+}
+#bbing{
+    color: goldenrod;
+}
+#wweather{
+    color: goldenrod;
+}
+
+
+/* ! responsive */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+

@@ -1,0 +1,27 @@
+#cryptoContainer {
+  border-width: 1px;
+  padding: 10px;
+  color: black !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* fle */
+}
+
+#cryptoItem {
+  padding: 1rem;
+  background-color: #fff;
+  color: black !important;
+  margin:1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#ccrypto{
+  color: goldenrod;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Main Page</title>
+
+        <style>
+            body{
+            margin: 0px;
+            background-color: black;
+            }
+
+            .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 10% 45% 45%;
+            }
+
+            div{
+            border: 5px solid black;
+            }
+
+            nav{
+            background-color: bisque;height: 100%;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <nav>
+
+                <h3 style="text-align: center;">Navigations</h3><br>
+
+                <ul>
+                    
+                    <li><a href="secondPage.html">Google Map</a></li>
+                    <li><a href="crypto.html">Crypto</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="corona.html">Corona</a></li>
+                
+                </ul>
+                
+            </nav>
+
+            <div>
+
+                <div style="width: auto;height: 50%;">
+                    <iframe style="height: 100%;width: 100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12981.146910809104!2d45.36244160531005!3d35.571314139777776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0c5ae5ba89a0ad5!2sUniversity%20of%20Sulaimani!5e0!3m2!1sen!2siq!4v1649100743201!5m2!1sen!2siq"></iframe>
+                </div>
+
+                <div style="width: auto;height: 50%;">
+                    <iframe style="width: 100%;height: 100%;" src="https://www.bing.com/maps/embed?h=350&w=600&cp=35.57685484842118~45.36082749142986&lvl=14.946605210278012&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>                
+                </div>
+
+            </div>
+
+            <div>
+
+                <div style="width: auto;height: 50%;">
+                    <iframe style="width: 100%;height: 100%;" src="https://www.mapillary.com/embed?map_style=Mapillary%20streets&image_key=2850852718576697&style=photo" frameborder="0"></iframe>
+                </div>
+                
+                <div style="width: auto;height: 50%;">
+                    <iframe style="width: 100%;height: 100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=45.32950401306153%2C35.567387012084225%2C45.377397537231445%2C35.58860869845245&amp;layer=mapnik"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

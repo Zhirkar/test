@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Second Page</title>
+
+        <style>
+
+            body{
+            margin: 0px;
+            background-color: black;
+            }
+
+            .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 10% 90% ;
+            }
+
+            #map{
+            height: 85%;
+            width: 100%;
+            }
+
+            nav{
+            background-color: bisque;height: 100%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <nav>
+
+                <h3 style="text-align: center;">Navigations</h3><br>
+
+                <ul>
+                    
+                    <li><a href="main.html">4 Maps</a></li>
+                    <li><a href="crypto.html">Crypto</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="corona.html">Corona</a></li>
+                
+                </ul>
+                
+            </nav>
+
+            <div>
+                <h1 style="color: blanchedalmond;">My Google Map</h1>
+
+                <div id="map"></div>
+
+                <script>
+                    function initMap(){
+                    var options = {
+                    zoom:8,
+                    center:{lat:35.5558,lng:45.4351}
+                    }
+
+                    var map = new
+                    google.maps.Map(document.getElementById('map'), options);
+
+                    addMarker({lat:35.5764,lng:45.3599},'<h1>University Of Sulaymaniyah</h1>');
+                    addMarker({lat:35.5728,lng:45.3535},'<h1>American University in Iraq Sulaymaniyah</h1>');
+                    addMarker({lat:35.5934,lng:45.3618},'<h1>Komar University</h1>');
+
+                    function addMarker (cordinates,text){
+                    var marker = new google.maps.Marker({
+                    position:cordinates,
+                    map:map
+                    });
+
+                    var infoWindow = new google.maps.InfoWindow({
+                    content:text
+                    });
+
+                    marker.addListener('click',function(){
+                    infoWindow.open(map, marker);
+                    });
+
+                    }
+
+                    }
+                </script> 
+
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8X30B3J6BKfhOTvT97LjTF0btVjTD2oM&callback=initMap&v=weekly"
+                async> 
+                </script>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
